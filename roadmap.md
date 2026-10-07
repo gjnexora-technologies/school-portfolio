@@ -1,0 +1,3 @@
+- [x] Build the requested school pages and shared navigation.
+- [x] Verify route loads, custom page metadata, gallery filters/lightbox, admission/contact forms, and phone/tablet/desktop layouts.
+- [x] Document missing school-supplied information and confirm all tasks are complete.
