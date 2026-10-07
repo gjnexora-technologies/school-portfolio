@@ -124,6 +124,12 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <div className="site-watermark" aria-label="GJ Nexora demo project">
+        <span className="site-watermark-dot" aria-hidden="true" />
+        <span className="site-watermark-brand">GJ NEXORA</span>
+        <span className="site-watermark-separator" aria-hidden="true">·</span>
+        <span className="site-watermark-label">DEMO PROJECT</span>
+      </div>
     </QueryClientProvider>
   );
 }

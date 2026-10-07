@@ -189,6 +189,11 @@
 }
 
 @layer components {
+  .site-watermark { position: fixed; right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); z-index: 50; display: inline-flex; align-items: center; gap: 7px; padding: 7px 11px; border: 1px solid oklch(0.88 0.025 170 / 0.9); border-radius: 999px; background: oklch(0.99 0.008 95 / 0.94); box-shadow: 0 3px 14px oklch(0.25 0.06 252 / 0.12); color: var(--school-navy); font-family: var(--font-sans); font-size: 10px; line-height: 1; pointer-events: none; }
+  .site-watermark-dot { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: var(--school-teal); }
+  .site-watermark-brand { font-weight: 700; letter-spacing: 0.025em; }
+  .site-watermark-separator { color: var(--school-teal); font-size: 13px; }
+  .site-watermark-label { color: var(--school-muted); font-weight: 500; }
   .site-wrap { width: min(100% - 3rem, 1200px); margin-inline: auto; }
   .site-header { position: sticky; top: 0; z-index: 40; border-bottom: 1px solid var(--border); background: color-mix(in oklab, var(--background) 96%, transparent); backdrop-filter: blur(16px); }
   .site-head-main { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
